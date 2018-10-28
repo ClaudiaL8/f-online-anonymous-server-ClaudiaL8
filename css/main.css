@@ -73,7 +73,7 @@ body {
 .nav__link {
   text-decoration: none;
   color: white;
-
+  opacity: 0.8;
 }
 .nav-close {
   position: absolute;
@@ -105,7 +105,7 @@ body {
   font-size: 30px;
   color: white;
   text-transform: uppercase;
-  padding-top: 48px;
+  padding-top: 55px;
   width: 260px;
 }
 
@@ -137,17 +137,35 @@ body {
 /* MEDIAS */
 @media all and (min-width: 768px) {
   .nav__item {
-    font-size: 40px;
+    font-size: 35px;
     margin: 4px;
     width: auto;
   }
   .page__main {
-    margin: 40px;
+    margin: 0 60px;
   }
   .page__main-title{
-    font-size: 40px;
+    font-size: 55px;
+    padding-top: 100px
   }
   .page__footer {
-    margin: 26px 40px;
+    margin: 26px 60px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .nav__item {
+    font-size: 40px;
+    margin: 2px;
+    width: auto;
+  }
+  .page__main {
+    margin: 0 170px;
+  }
+  .page__main-title{
+    font-size: 80px;
+    padding-top: 105px;
+  }
+  .page__footer {
+    margin: 0 170px 20px 170px;
   }
 }
