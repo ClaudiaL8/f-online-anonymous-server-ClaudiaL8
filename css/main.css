@@ -35,6 +35,9 @@ body {
   opacity: 0.75;
   font-size: 0;
 }
+.nav-trigger:hover {
+  background-color: orangered;
+}
 
 
 
@@ -55,6 +58,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation-duration: 2s;
+  animation-name: intro;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes intro {
+  from {
+      opacity: 0;
+      
+  }
+  to {
+      opacity: 0,92;
+  }
 }
 .nav__items {
   list-style: none;
@@ -74,6 +90,10 @@ body {
   text-decoration: none;
   color: white;
   opacity: 0.8;
+  transition: color ease 1s;
+}
+a:hover {
+  color: orangered;
 }
 .nav-close {
   position: absolute;
@@ -89,6 +109,9 @@ body {
   top: 0;
   right: 0;
   font-size: 0;
+}
+.nav-close:hover {
+  background-color: orangered;
 }
 
 
@@ -131,6 +154,7 @@ body {
 .page__footer__none{
   visibility: hidden;
 }
+
 
 
 
